@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo limpiar una computadora de escritorio</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url('https://plus.unsplash.com/premium_photo-1683121713210-97667d2e83c8?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png');
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #1e1e1e;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+
+        /* Contenedores */
+        .container {
+            max-width: 900px;
+            margin: 100px auto 60px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #222;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1e4de9;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #1e4de9;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        p, li {
+            font-size: 1.1em;
+            line-height: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 10px 0 20px 20px;
+        }
+
+        a {
+            color: #1e4de9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1e4de9;
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Botones de cambio de idioma */
+        .language-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+
+        .language-buttons button {
+            padding: 10px;
+            margin: 5px;
+            background-color: #1e4de9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .language-buttons button:hover {
+            background-color: #1a3db0;
+        }
+
+        /* Estilo para la sección de contacto */
+        .contacto {
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            color: #1e4de9;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#section1">Introducción</a>
+        <a href="#section2">Instrucciones</a>
+        <a href="#section3">Contacto</a>
+    </div>
+
+    <div class="language-buttons">
+        <button id="es-button">Español</button>
+        <button id="en-button">English</button>
+    </div>
+
+    <div class="container section" id="section1">
+        <h1 id="title">Cómo limpiar una computadora de escritorio</h1>
+        <img src="https://t1.uc.ltmcdn.com/es/posts/9/4/4/como_limpiar_la_pantalla_del_ordenador_52449_orig.jpg" alt="Limpiando una computadora de escritorio">
+        <p id="intro-text">Para más información, puedes ver este video sobre cómo limpiar una computadora de escritorio:</p>
+        <p><a href="https://www.youtube.com/watch?v=RYO1u6jlKZg" target="_blank" id="video-link">Ver video en YouTube</a></p>
+        <p id="cleaning-info">La limpieza regular de tu computadora de escritorio es esencial para mantener su rendimiento y prolongar su vida útil. Sigue estos pasos para limpiarla adecuadamente:</p>
+    </div>
+
+    <div class="container section" id="section2">
+        <h2 id="materials-heading">Materiales necesarios</h2>
+        <ul id="materials-list">
+            <li>Paño de microfibra</li>
+            <li>Aire comprimido</li>
+            <li>Alcohol isopropílico (70% o más)</li>
+            <li>Hisopos de algodón</li>
+            <li>Destornillador</li>
+        </ul>
+
+        <h2 id="instructions-heading">Instrucciones</h2>
+        <ol id="instructions-list">
+            <li><strong>Apaga y desconecta la computadora:</strong> Asegúrate de que la computadora esté apagada y desconectada de la corriente eléctrica antes de comenzar.</li>
+            <li><strong>Desmonta la carcasa:</strong> Usa un destornillador para quitar los tornillos y desmontar la carcasa de la computadora.</li>
+            <li><strong>Limpia el interior con aire comprimido:</strong> Usa aire comprimido para eliminar el polvo de los componentes internos.</li>
+            <li><strong>Limpia los ventiladores:</strong> Sostén los ventiladores mientras usas aire comprimido para limpiarlos.</li>
+            <li><strong>Limpia los componentes con alcohol isopropílico:</strong> Humedece ligeramente un paño de microfibra con alcohol isopropílico y limpia suavemente las superficies de los componentes.</li>
+            <li><strong>Limpia la carcasa externa:</strong> Usa el paño de microfibra para limpiar la carcasa externa de la computadora.</li>
+            <li><strong>Vuelve a montar la carcasa:</strong> Una vez que todo esté limpio y seco, vuelve a montar la carcasa de la computadora.</li>
+            <li><strong>Conecta y enciende la computadora:</strong> Conecta la computadora y enciéndela para asegurarte de que todo funcione correctamente.</li>
+        </ol>
+    </div>
+
+    <div class="container section" id="section3">
+        <div class="contacto">
+            <h2 id="contact-heading">Contacto</h2>
+            <p><strong id="email-label">Correo electrónico:</strong> <a href="mailto:contacto@tupagina.com">contacto@tupagina.com</a></p>
+            <p><strong id="phone-label">Teléfono:</strong> +1 (555) 123-4567</p>
+            <p><strong id="address-label">Dirección:</strong> Calle Ejemplo 123, Ciudad, País</p>
+            <p><strong id="follow-label">Síguenos en redes sociales:</strong></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/tupagina" target="_blank" title="Facebook">F</a>
+                <a href="https://www.twitter.com/tupagina" target="_blank" title="Twitter">T</a>
+                <a href="https://www.instagram.com/tupagina" target="_blank" title="Instagram">I</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll suave
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Función para cambiar el idioma
+        const esContent = {
+            title: "Cómo limpiar una computadora de escritorio",
+            introText: "Para más información, puedes ver este video sobre cómo limpiar una computadora de escritorio:",
+            cleaningInfo: "La limpieza regular de tu computadora de escritorio es esencial para mantener su rendimiento y prolongar su vida útil. Sigue estos pasos para limpiarla adecuadamente:",
+            materialsHeading: "Materiales necesarios",
+            instructionsHeading: "Instrucciones",
+            instructionsList: [
+                "Apaga y desconecta la computadora: Asegúrate de que la computadora esté apagada y desconectada de la corriente eléctrica antes de comenzar.",
+                "Desmonta la carcasa: Usa un destornillador para quitar los tornillos y desmontar la carcasa de la computadora.",
+                "Limpia el interior con aire comprimido: Usa aire comprimido para eliminar el polvo de los componentes internos.",
+                "Limpia los ventiladores: Sostén los ventiladores mientras usas aire comprimido para limpiarlos.",
+                "Limpia los componentes con alcohol isopropílico: Humedece ligeramente un paño de microfibra con alcohol isopropílico y limpia suavemente las superficies de los componentes.",
+                "Limpia la carcasa externa: Usa el paño de microfibra para limpiar la carcasa externa de la computadora.",
+                "Vuelve a montar la carcasa: Una vez que todo esté limpio y seco, vuelve a montar la carcasa de la computadora.",
+                "Conecta y enciende la computadora: Conecta la computadora y enciéndela para asegurarte de que todo funcione correctamente."
+            ],
+            contactHeading: "Contacto",
+            emailLabel: "Correo electrónico:",
+            phoneLabel: "Teléfono:",
+            addressLabel: "Dirección:",
+            followLabel: "Síguenos en redes sociales:"
+        };
+
+        const enContent = {
+            title: "How to Clean a Desktop Computer",
+            introText: "For more information, you can watch this video on how to clean a desktop computer:",
+            cleaningInfo: "Regular cleaning of your desktop computer is essential to maintain its performance and prolong its lifespan. Follow these steps to clean it properly:",
+            materialsHeading: "Required Materials",
+            instructionsHeading: "Instructions",
+            instructionsList: [
+                "Turn off and unplug the computer: Make sure the computer is turned off and unplugged from the electrical outlet before you start.",
+                "Remove the case: Use a screwdriver to remove the screws and take off the computer case.",
+                "Clean the interior with compressed air: Use compressed air to blow the dust out of the internal components.",
+                "Clean the fans: Hold the fans while using compressed air to clean them.",
+                "Clean components with isopropyl alcohol: Lightly dampen a microfiber cloth with isopropyl alcohol and gently clean the surfaces of the components.",
+                "Clean the outer case: Use the microfiber cloth to clean the outer case of the computer.",
+                "Reassemble the case: Once everything is clean and dry, reassemble the computer case.",
+                "Plug in and turn on the computer: Plug in the computer and turn it on to ensure everything is working properly."
+            ],
+            contactHeading: "Contact",
+            emailLabel: "Email:",
+            phoneLabel: "Phone:",
+            addressLabel: "Address:",
+            followLabel: "Follow us on social media:"
+        };
+
+        document.getElementById('es-button').addEventListener('click', () => setLanguage(esContent));
+        document.getElementById('en-button').addEventListener('click', () => setLanguage(enContent));
+
+        function setLanguage(content) {
+            document.getElementById('title').textContent = content.title;
+            document.getElementById('intro-text').textContent = content.introText;
+            document.getElementById('cleaning-info').textContent = content.cleaningInfo;
+            document.getElementById('materials-heading').textContent = content.materialsHeading;
+            document.getElementById('instructions-heading').textContent = content.instructionsHeading;
+
+            const instructionsList = document.getElementById('instructions-list');
+            instructionsList.innerHTML = '';
+            content.instructionsList.forEach(instruction => {
+                const li = document.createElement('li');
+                li.textContent = instruction;
+                instructionsList.appendChild(li);
+            });
+
+            document.getElementById('contact-heading').textContent = content.contactHeading;
+            document.getElementById('email-label').textContent = content.emailLabel;
+            document.getElementById('phone-label').textContent = content.phoneLabel;
+            document.getElementById('address-label').textContent = content.addressLabel;
+            document.getElementById('follow-label').textContent = content.followLabel;
+        }
+    </script>
+</body>
+</html>
